@@ -1,0 +1,104 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@500&display=swap');
+/* -------------common--style-------- */
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Encode Sans SC', sans-serif;
+    background-color: #E5E5E5;
+}
+/*-------------- header-section-style start---------- */
+.header{
+    height: 94px;
+    width: 100%;
+    background-color: #562EFF;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.logo img{
+    width: 40px;
+    height: 51px;
+    margin-left: 285px;
+    margin-top: 20px;
+}
+.logo p{
+    margin-left: 327px;
+    margin-top: -44px;
+    font-size: 29px;
+    color: #fff;
+}
+.navbar{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-column-gap: 35px;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+}
+nav ul li{
+    margin-left: 40px;
+    margin-top: 20px;
+
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 5px 5px;
+    transition: 0.3s ease-in;
+}
+nav ul li a:hover{
+    border-bottom: 2px solid rgb(238, 84, 67);
+}
+.header-profile img{
+    margin-top: 23px;
+    border: 2px solid #562EFF;
+    border-radius: 50%;
+    transition: 0.3s ease-in;
+}
+.header-profile img:hover{
+    border: 2px solid rgb(238, 84, 67);
+    border-radius: 50%;
+    transform: scale(1.1);
+}
+/*-------------- header-section-style-End---------------------- */
+
+/*-------------- top player and top blogd-style-start---------- */
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 870px;
+    background-color: #fff;
+    padding: 30px;
+}
+.players-title{
+    font-size: 24px;
+    color:#562EFF;
+    margin-top: 4px;
+    margin-bottom: 30px;
+}
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3,1f);
+    grid-column-gap: 10px;
+    grid-row-gap: 20px;
+}
+.player{
+    display: flex;
+    align-items: center;
+}
+.player img{
+    width: 56px;
+    height: 56px;
+}
+.players-name{
+    margin-left: 16px;
+    font-size: 18px;
+    letter-spacing: 0.6px;
+}
