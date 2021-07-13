@@ -21,11 +21,16 @@ body{
     margin-left: 285px;
     margin-top: 20px;
 }
+
 .logo p{
     margin-left: 327px;
     margin-top: -44px;
     font-size: 29px;
     color: #fff;
+    transition: 0.5s ease-in;
+}
+.logo p:hover{
+    color: rgb(238, 84, 67);
 }
 .navbar{
     display: grid;
@@ -51,6 +56,7 @@ nav ul li a{
 }
 nav ul li a:hover{
     border-bottom: 2px solid rgb(238, 84, 67);
+    color: rgb(238, 84, 67);
 }
 .header-profile img{
     margin-top: 23px;
@@ -87,6 +93,12 @@ main{
     color:#562EFF;
     margin-top: 4px;
     margin-bottom: 30px;
+    transition: 0.4s ease-in;
+    cursor: pointer;
+}
+.section-title:hover{
+    color: rgb(238, 84, 67);
+    text-shadow: 0px 8px 3px #fa807273;
 }
 .players{
     display: grid;
@@ -102,15 +114,34 @@ main{
 .player img{
     width: 56px;
     height: 56px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    transition: 0.5s ease-in;
+}
+.player img:hover{
+    border: 2px solid rgb(238, 84, 67);
+    border-radius: 50%;
+    transform: scale(1.1);
 }
 .players-name{
     margin-left: 16px;
     font-size: 18px;
     letter-spacing: 0.6px;
+    cursor: pointer;
+    transition: 0.5s ease-in;
+}
+.players-name:hover{
+    color: rgb(238, 84, 67);
+    text-shadow: 0px 8px 3px #fa807273;
 }
 hr{
     border: 1px solid #D1D1D1;
     margin-bottom: 30px;
+    transition: 0.3s ease-in;
+}
+hr:hover{
+    border: 1px solid rgb(238, 84, 67);
+
 }
 /*-------------- top player-style-End---------- */
 
@@ -123,10 +154,16 @@ hr{
 }
 .blog{
     display: flex;
+    overflow: hidden;
 }
 .thumnail img{
     width: 177px;
     height: 117px;
+   
+    transition: 0.6s ease-in;
+}
+.thumnail img:hover{
+    transform: scale(1.1);
 }
 .blog-info{
     margin-left: 16px;
@@ -135,6 +172,11 @@ hr{
     color: rgb(77, 66, 66);
     padding-right: 30px;
     letter-spacing: 0.8px;
+    transition: 0.4s ease-out;
+}
+.blog-title:hover{
+    color: rgb(238, 84, 67);
+    text-shadow: 0px 8px 3px #fa807273;
 }
 .blog-author{
     color: #9F9F9F;
