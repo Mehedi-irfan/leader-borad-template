@@ -215,6 +215,22 @@ hr:hover{
     border-radius: 15px;
 
 }
+.course-title{
+    transition: 0.4s ease-out;
+    cursor: pointer;
+    
+    }
+.course-title:hover{
+    color: rgb(238, 84, 67);
+    text-shadow: 0px 8px 3px #fa807273;
+}
+.course-author{
+    transition: 0.4s ease-out;
+    cursor: pointer;
+}
+.course-author:hover{
+    color: salmon;
+}
 .fa-star{
     font-size: 12px;
 }
@@ -237,4 +253,56 @@ hr:hover{
 }
 .rating{
     opacity: 0.6;
+}
+
+/* ------------------media quarise--------------------------------- */
+/* -------------mobile-device-------- */
+@media only screen and (max-width:688px) {
+    .header{
+        display: none;
+    }
+    .container{
+        width: 100%;
+    }
+    .players, .blogs, .courses{
+       grid-template-columns: repeat(1, 1fr);
+    }
+    .section-title{
+        text-align: center;
+    }
+    .player, .blogs{
+        flex-direction: column;
+    }
+    
+    .courses{
+       margin-left: 50px;
+       grid-row-gap: 30px;
+    }
+     
+}
+/* -------------------ipad devic----- */
+
+@media only screen and (min-width: 688px) and (max-width: 992px){
+    .header{
+        display: none;
+    }
+    .container{
+        width: 100%;
+    }
+    .section-title{
+        text-align: center;
+    }
+    .player{
+        padding-left: 100px;
+    }
+    .players, .courses{
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 30px;
+    }
+    .blog{
+        padding-left: 30px;
+    }
+    .courses{
+        padding-left: 100px;
+    }
 }
