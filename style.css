@@ -150,12 +150,28 @@ hr{
 .courses{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 82px;
+    grid-column-gap: 34px;
     width: 230px;
+}
+.course{
+    box-shadow: 16px 15px 32px #908c8c;
+    padding: 20px;
+    border-radius: 10px;
+    transition: 0.6s ease-in;
+}
+.course:hover{
+    box-shadow: none;
 }
 .course-banner img{
     width: 224px;
     height: 104px;
+    border-radius: 15px;
+    transition: 0.6s ease-in;
+}
+.course:hover .course-banner img{
+    box-shadow: 12px 13px 30px #8c8686;
+    border-radius: 15px;
+
 }
 .fa-star{
     font-size: 12px;
